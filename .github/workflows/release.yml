@@ -30,7 +30,7 @@ jobs:
         run: |
           i18n-extract
           opt-size
-          gen-config --version=${{ github.ref_name }} --repo=openblockcc/external-resources --cdn=https://cdn.openblock.cc/
+          gen-config --version=${{ github.ref_name }} --repo=${{ github.repository }} --cdn=https://cdn.openblock.cc/
           gen-hash
 
       - name: Get version
