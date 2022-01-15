@@ -1,6 +1,10 @@
-name: Weekly Update Translations
+name: Sync Translations
 
 on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
   schedule:
     - cron: '0 1 * * 1,4' # Runs at 01:00 UTC on Monday and Thursday
 
