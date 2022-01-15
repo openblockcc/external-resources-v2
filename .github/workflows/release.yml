@@ -28,7 +28,6 @@ jobs:
 
       - name: Pro-process resources
         run: |
-          i18n-extract
           opt-size
           gen-config --version=${{ github.ref_name }} --repo=${{ github.repository }} --cdn=https://cdn.openblock.cc/
           gen-hash
@@ -57,15 +56,29 @@ jobs:
           tag_name: ${{ github.ref_name }}
           release_name: OpenBlock External Resources ${{ github.ref_name }}
           body: |
+            # Change Log (en)
+
             - **New feature**
 
-                1. First Change
-                2. Second Change
+                1. Feature 1
+                2. Feature 2
 
             - **Fix bug**
 
-                1. First Change
-                2. Second Change
+                1. Bug 1
+                2. Bug 2
+
+            # 更改日志 (zh-cn)
+
+            - **新功能**
+
+                1. 功能1
+                2. 功能2
+
+            - **修复错误**
+
+                1. 错误1
+                2. 错误2
           draft: true
           prerelease: false
 

@@ -1,0 +1,40 @@
+name: Weekly Update Translations
+
+on:
+  schedule:
+    - cron: '0 1 * * 1,4' # Runs at 01:00 UTC on Monday and Thursday
+
+jobs:
+  weekly-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+
+      - run: npm i -g openblock-resource-cli
+
+      - name: Sync translations
+        run: |
+          export TX_TOKEN=${{ secrets.TX_TOKEN }}
+          i18n-extract
+          i18n-push
+          i18n-update
+
+      - name: Check for modified files
+        id: git-check
+        # Check if there are any files update, but ignore the case where only package-lock.json is updated.
+        run: |
+          echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+
+      - name: Commit translations
+        if: ${{ steps.git-check.outputs.modified == 'true' }}
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git add .
+          git commit -m '[skip ci] Update translations from transifex'
+          git remote add origin-translation https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
+          git push --set-upstream origin-translation main
