@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli
+      - run: npm i -g openblock-resource-cli@0.1.4
 
       - name: Sync translations
         run: |

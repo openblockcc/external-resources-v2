@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli
+      - run: npm i -g openblock-resource-cli@0.1.4
 
       - name: Sync translations
         run: |
@@ -30,7 +30,6 @@ jobs:
         run: |
           opt-size
           gen-config --version=${{ github.ref_name }} --repo=${{ github.repository }} --cdn=https://cdn.openblock.cc/
-          gen-hash
 
       - name: Get version
         id: get-version
