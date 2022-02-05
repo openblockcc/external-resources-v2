@@ -59,25 +59,25 @@ jobs:
 
             - **New feature**
 
-                1. Feature 1
-                2. Feature 2
+                1. Feature 1.
+                2. Feature 2.
 
             - **Fix bug**
 
-                1. Bug 1
-                2. Bug 2
+                1. Bug 1.
+                2. Bug 2.
 
             # 更改日志 (zh-cn)
 
             - **新功能**
 
-                1. 功能1
-                2. 功能2
+                1. 功能1。
+                2. 功能2。
 
             - **修复错误**
 
-                1. 错误1
-                2. 错误2
+                1. 错误1。
+                2. 错误2。
           draft: true
           prerelease: false
 
