@@ -55,7 +55,7 @@ jobs:
           tag_name: ${{ github.ref_name }}
           release_name: OpenBlock External Resources ${{ github.ref_name }}
           body: |
-            # Change Log (en)
+            ## Change Log (en)
 
             - **New feature**
 
@@ -67,7 +67,7 @@ jobs:
                 1. Bug 1.
                 2. Bug 2.
 
-            # 更改日志 (zh-cn)
+            ## 更改日志 (zh-cn)
 
             - **新功能**
 
