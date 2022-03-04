@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli@0.1.4
+      - run: npm i -g openblock-resource-cli@0.2.0
 
       - name: Sync translations
         run: |
@@ -29,7 +29,7 @@ jobs:
       - name: Pro-process resources
         run: |
           opt-size
-          gen-config --version=${{ github.ref_name }} --repo=${{ github.repository }} --cdn=https://cdn.openblock.cc/
+          gen-config --version=${{ github.ref_name }}
 
       - name: Get version
         id: get-version
@@ -90,6 +90,23 @@ jobs:
           asset_path: external-resources-${{ steps.get-version.outputs.VERSION }}.zip
           asset_name: external-resources-${{ steps.get-version.outputs.VERSION }}.zip
           asset_content_type: application/zip
+
+      # Upload to digitalocean
+      - uses: idlefingers/do-space-sync-action@master
+        with:
+          args: --acl public-read
+        env:
+          SOURCE_DIR: './public'
+          SPACE_NAME: ${{ secrets.SPACE_NAME }}
+          SPACE_REGION: ${{ secrets.SPACE_REGION}}
+          SPACE_ACCESS_KEY_ID: ${{ secrets.SPACE_ACCESS_KEY_ID }}
+          SPACE_SECRET_ACCESS_KEY: ${{ secrets.SPACE_SECRET_ACCESS_KEY }}
+
+      # Upload to digitalocean
+      - name: Release resources to digital ocean spaces
+        run: |
+          upload-zip --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip
+          upload-releaseInfo
 
       # Upload checksum
       - uses: actions/upload-release-asset@v1
