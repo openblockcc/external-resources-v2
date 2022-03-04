@@ -94,6 +94,8 @@ jobs:
       # Upload to digitalocean
       - name: Release resources to digital ocean spaces
         run: |
+          export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
+          export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
           upload-zip --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip
           upload-releaseInfo
 
