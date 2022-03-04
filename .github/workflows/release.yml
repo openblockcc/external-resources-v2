@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli@0.2.1
+      - run: npm i -g openblock-resource-cli@0.2.2
 
       - name: Sync translations
         run: |
@@ -44,7 +44,7 @@ jobs:
             dest: external-resources-${{ steps.get-version.outputs.VERSION }}.zip
 
       - name: Checksum
-        run: sha256sum external-resources-*.zip >> checksums.txt
+        run: sha256sum external-resources-*.zip >> ${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt
 
       - name: Create Release
         id: create_release
@@ -91,20 +91,20 @@ jobs:
           asset_name: external-resources-${{ steps.get-version.outputs.VERSION }}.zip
           asset_content_type: application/zip
 
-      # Upload to digitalocean
-      - name: Release resources to digital ocean spaces
-        run: |
-          export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
-          export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
-          upload-zip --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip
-          upload-releaseInfo
-
       # Upload checksum
       - uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: checksums.txt
+          asset_path: ${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt
           asset_name: ${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt
           asset_content_type: text/plain
+
+      # Upload to digitalocean
+      - name: Release resources to digital ocean spaces
+        run: |
+          export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
+          export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
+          upload-file --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip
+          upload-file --filePath=${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt
