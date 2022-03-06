@@ -19,13 +19,6 @@ jobs:
 
       - run: npm i -g openblock-resource-cli@0.2.2
 
-      - name: Sync translations
-        run: |
-          export TX_TOKEN=${{ secrets.TX_TOKEN }}
-          i18n-extract
-          i18n-push
-          i18n-update
-
       - name: Pro-process resources
         run: |
           opt-size
