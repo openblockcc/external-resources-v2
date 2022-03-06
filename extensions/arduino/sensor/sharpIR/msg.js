@@ -25,9 +25,9 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "SHARPIR_CATEGORY": "Sharp IR",
-            "SHARPIR_INIT": "init sharp IR sensor %1 pin %2 model %3",
-            "SHARPIR_READDISTANCE": "sharp IR sensor %1 read distance"
+            "SHARPIR_CATEGORY": "夏普紅外",
+            "SHARPIR_INIT": "初始化夏普紅外傳感器 %1 管腳 %2 型號 %3",
+            "SHARPIR_READDISTANCE": "夏普紅外傳感器 %1 讀取距離"
         }
     );
 

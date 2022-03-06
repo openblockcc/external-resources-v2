@@ -33,13 +33,13 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "SOFTWARESERIAL_AVAILABLE": "software serial %1 available data length",
-            "SOFTWARESERIAL_BEGIN": "software serial %1 RX pin %2 TX pin %3 begin baudrate %4",
-            "SOFTWARESERIAL_CATEGORY": "software serial",
-            "SOFTWARESERIAL_NOWARP": "no-warp",
-            "SOFTWARESERIAL_PRINT": "software serial %1 print %2 %3",
-            "SOFTWARESERIAL_READABYTE": "software serial %1 read a byte",
-            "SOFTWARESERIAL_WARP": "warp"
+            "SOFTWARESERIAL_AVAILABLE": "軟件串口 %1 可用數據長度",
+            "SOFTWARESERIAL_BEGIN": "軟件串口 %1 RX 管腳 %2 TX 管腳 %3 開啟波特率 %4",
+            "SOFTWARESERIAL_CATEGORY": "軟件串口",
+            "SOFTWARESERIAL_NOWARP": "不換行",
+            "SOFTWARESERIAL_PRINT": "軟件串口 %1 打印 %2 %3",
+            "SOFTWARESERIAL_READABYTE": "軟件串口 %1 讀取一個字節",
+            "SOFTWARESERIAL_WARP": "換行"
         }
     );
 

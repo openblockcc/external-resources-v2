@@ -23,8 +23,8 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "ULTRASONIC_CATEGORY": "Ultrasonic",
-            "ULTRASONIC_READ_DISTANCE": "ultrasonic sensor pin TRIG %1 ECHO %2 read distance %3"
+            "ULTRASONIC_CATEGORY": "超聲波",
+            "ULTRASONIC_READ_DISTANCE": "超聲波傳感器管腳 TRIG %1 ECHO %2 讀取距離 %3"
         }
     );
 

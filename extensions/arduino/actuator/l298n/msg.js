@@ -31,12 +31,12 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "L298N_BACK": "back",
+            "L298N_BACK": "後",
             "L298N_CATEGORY": "L298N",
-            "L298N_FORWARD": "foward",
-            "L298N_INIT": "init channel %1 pin IN1 %2 IN2 %3 EN %4",
-            "L298N_RUN": "channel %1 run %2 speed %3",
-            "L298N_STOP": "channel %1 stop"
+            "L298N_FORWARD": "前",
+            "L298N_INIT": "初始化通道 %1 管腳 IN1 %2 IN2 %3 EN %4",
+            "L298N_RUN": "通道 %1 向 %2 速度 %3",
+            "L298N_STOP": "通道 %1 停止"
         }
     );
 

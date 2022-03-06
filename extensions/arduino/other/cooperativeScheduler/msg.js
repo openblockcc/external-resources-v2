@@ -27,10 +27,10 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "COOPERATIVESCHEDULER_CATEGORY": "Cooperative scheduler",
-            "COOPERATIVESCHEDULER_SETUP": "task %1 setup",
-            "COOPERATIVESCHEDULER_SLEEP": "task delay %1 ms",
-            "COOPERATIVESCHEDULER_START": "start cooperative scheduler"
+            "COOPERATIVESCHEDULER_CATEGORY": "多任務調度器",
+            "COOPERATIVESCHEDULER_SETUP": "任務 %1 setup",
+            "COOPERATIVESCHEDULER_SLEEP": "任務延時 %1 ms",
+            "COOPERATIVESCHEDULER_START": "啟動多任務調度器"
         }
     );
 

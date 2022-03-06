@@ -28,9 +28,9 @@ function addMsg (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
             "DS18B20_CATEGORY": "DS18B20",
-            "DS18B20_GETTEMPERATURE": "ds18b20 %1 temperatures %2",
-            "DS18B20_INIT": "init ds18b20 pin %1 quantity %2",
-            "DS18B20_READALLTEMPERATURES": "ds18b20 read all temperatures"
+            "DS18B20_GETTEMPERATURE": "ds18b20 %1 溫度 %2",
+            "DS18B20_INIT": "初始化 ds18b20 管腳 %1 數量 %2",
+            "DS18B20_READALLTEMPERATURES": "ds18b20 讀取所有溫度"
         }
     );
 

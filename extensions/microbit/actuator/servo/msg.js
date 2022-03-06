@@ -23,8 +23,8 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "SERVO_CATEGORY": "Servo",
-            "SERVO_WRITE": "set servo pin %1 out %2"
+            "SERVO_CATEGORY": "舵機",
+            "SERVO_WRITE": "設置管腳 %1 舵機為 %2"
         }
     );
 

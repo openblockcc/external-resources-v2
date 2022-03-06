@@ -29,11 +29,11 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "EIGHTDIGITDISPLAY_CATEGORY": "8-Digit Display",
-            "EIGHTDIGITDISPLAY_CLEAR": "clear 8-digit display",
-            "EIGHTDIGITDISPLAY_DISPLAYNUMBER": "8-digit display show number %1 decimal %2",
-            "EIGHTDIGITDISPLAY_INIT": "init 8-digit display pin DIN %1 CS %2 CLK %3",
-            "EIGHTDIGITDISPLAY_SETBRIGHTNESS": "set 8-digit display brightness %1"
+            "EIGHTDIGITDISPLAY_CATEGORY": "8位數碼管",
+            "EIGHTDIGITDISPLAY_CLEAR": "清空8位數碼管",
+            "EIGHTDIGITDISPLAY_DISPLAYNUMBER": "8位數碼管顯示數字 %1 保留小數點後 %2 位",
+            "EIGHTDIGITDISPLAY_INIT": "初始化 8位數碼管管腳 DIN %1 CS %2 CLK %3",
+            "EIGHTDIGITDISPLAY_SETBRIGHTNESS": "設置8位數碼管亮度 %1"
         }
     );
 
