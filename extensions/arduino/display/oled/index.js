@@ -1,10 +1,10 @@
 const oled = formatMessage => ({
     name: 'OLED',
     extensionId: 'oled',
-    version: '0.0.1',
+    version: '1.0.2',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
-    author: 'ArthurZheng',
+    author: 'iRobochakra',
     iconURL: `asset/oled.png`,
     description: formatMessage({
         id: 'oled.description',
@@ -16,9 +16,8 @@ const oled = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
-    official: true,
     tags: ['display'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    helpLink: ''
 });
 
 module.exports = oled;
