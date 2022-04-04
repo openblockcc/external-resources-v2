@@ -14,11 +14,11 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli@0.2.2
+      - run: npm i -g openblock-resource-cli@0.2.4
 
       # Fetch the release info and upload to digitalocean
       - name: Release resources to digital ocean spaces
         run: |
           export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
           export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
-          upload-releaseInfo
+          upload-releaseInfo --repo=openblockcc/external-resources-v2 --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
