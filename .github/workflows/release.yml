@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '14.x'
 
-      - run: npm i -g openblock-resource-cli@0.2.4
+      - run: npm i -g openblock-resource-cli@0.2.5
 
       - name: Pro-process resources
         run: |
@@ -99,5 +99,5 @@ jobs:
         run: |
           export DO_KEY_ID=${{ secrets.DO_KEY_ID }}
           export DO_SECRET_KEY=${{ secrets.DO_SECRET_KEY }}
-          upload-file --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip
-          upload-file --filePath=${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt
+          upload-file --filePath=external-resources-${{ steps.get-version.outputs.VERSION }}.zip  --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
+          upload-file --filePath=${{ steps.get-version.outputs.VERSION }}-checksums-sha256.txt  --endPoint=https://sgp1.digitaloceanspaces.com --bucket=openblock
