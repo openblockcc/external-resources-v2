@@ -34,9 +34,6 @@
 [submodule ".\\extensions\\arduino\\display\\shiftDigitDisplay\\lib\\ShiftDisplay"]
 	path = .\\extensions\\arduino\\display\\shiftDigitDisplay\\lib\\ShiftDisplay
 	url = https://github.com/MiguelPynto/ShiftDisplay.git
-[submodule ".\\extensions\\arduino\\display\\u8g2\\lib\\u8g2"]
-	path = .\\extensions\\arduino\\display\\u8g2\\lib\\u8g2
-	url = https://github.com/olikraus/u8g2.git
 [submodule ".\\extensions\\arduino\\other\\mfrc522\\lib\\rfid"]
 	path = .\\extensions\\arduino\\other\\mfrc522\\lib\\rfid
 	url = https://github.com/miguelbalboa/rfid
@@ -85,3 +82,6 @@
 [submodule ".\\extensions\\arduino\\sensor\\ultrasonic\\lib\\Ultrasonic"]
 	path = .\\extensions\\arduino\\sensor\\ultrasonic\\lib\\Ultrasonic
 	url = https://github.com/ErickSimoes/Ultrasonic.git
+[submodule ".\\extensions\\arduino\\display\\u8g2\\lib\\U8g2_Arduino"]
+	path = .\\extensions\\arduino\\display\\u8g2\\lib\\U8g2_Arduino
+	url = https://github.com/olikraus/U8g2_Arduino.git
