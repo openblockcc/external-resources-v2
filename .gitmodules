@@ -1,0 +1,87 @@
+[submodule ".\\extensions\\arduino\\communication\\irRemoteReceiver\\lib\\Arduino-IRremote"]
+	path = .\\extensions\\arduino\\communication\\irRemoteReceiver\\lib\\Arduino-IRremote
+	url = https://github.com/Arduino-IRremote/Arduino-IRremote.git
+[submodule ".\\extensions\\arduino\\communication\\nrf24l01\\lib\\NRFLite"]
+	path = .\\extensions\\arduino\\communication\\nrf24l01\\lib\\NRFLite
+	url = https://github.com/dparson55/NRFLite.git
+[submodule ".\\extensions\\arduino\\display\\eightDigitDisplay\\lib\\DigitLedDisplay"]
+	path = .\\extensions\\arduino\\display\\eightDigitDisplay\\lib\\DigitLedDisplay
+	url = https://github.com/ozhantr/DigitLedDisplay.git
+[submodule "extensions\\arduino\\display\\eitghtTimesEightMatirxDisplay\\lib\\arduino-Max72xxPanel"]
+	path = extensions\\arduino\\display\\eitghtTimesEightMatirxDisplay\\lib\\arduino-Max72xxPanel
+	url = https://github.com/markruys/arduino-Max72xxPanel.git
+[submodule "extensions\\arduino\\display\\eitghtTimesEightMatirxDisplay\\lib\\Adafruit-GFX-Library"]
+	path = extensions\\arduino\\display\\eitghtTimesEightMatirxDisplay\\lib\\Adafruit-GFX-Library
+	url = https://github.com/adafruit/Adafruit-GFX-Library
+[submodule ".\\extensions\\arduino\\display\\fourDigitClockDisplay\\lib\\Grove_4Digital_Display"]
+	path = .\\extensions\\arduino\\display\\fourDigitClockDisplay\\lib\\Grove_4Digital_Display
+	url = https://github.com/Seeed-Studio/Grove_4Digital_Display.git
+[submodule ".\\extensions\\arduino\\display\\lcd\\lib\\Arduino-LiquidCrystal-I2C-library"]
+	path = .\\extensions\\arduino\\display\\lcd\\lib\\Arduino-LiquidCrystal-I2C-library
+	url = https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library.git
+[submodule ".\\extensions\\arduino\\display\\oled\\lib\\Adafruit_BusIO"]
+	path = .\\extensions\\arduino\\display\\oled\\lib\\Adafruit_BusIO
+	url = https://github.com/adafruit/Adafruit_BusIO.git
+[submodule ".\\extensions\\arduino\\display\\oled\\lib\\Adafruit-GFX-Library"]
+	path = .\\extensions\\arduino\\display\\oled\\lib\\Adafruit-GFX-Library
+	url = https://github.com/adafruit/Adafruit-GFX-Library.git
+[submodule ".\\extensions\\arduino\\display\\oled\\lib\\Adafruit_SSD1306"]
+	path = .\\extensions\\arduino\\display\\oled\\lib\\Adafruit_SSD1306
+	url = https://github.com/adafruit/Adafruit_SSD1306.git
+[submodule ".\\extensions\\arduino\\display\\rgbLedStrip\\lib\\Adafruit_NeoPixel"]
+	path = .\\extensions\\arduino\\display\\rgbLedStrip\\lib\\Adafruit_NeoPixel
+	url = https://github.com/adafruit/Adafruit_NeoPixel.git
+[submodule ".\\extensions\\arduino\\display\\shiftDigitDisplay\\lib\\ShiftDisplay"]
+	path = .\\extensions\\arduino\\display\\shiftDigitDisplay\\lib\\ShiftDisplay
+	url = https://github.com/MiguelPynto/ShiftDisplay.git
+[submodule ".\\extensions\\arduino\\display\\u8g2\\lib\\u8g2"]
+	path = .\\extensions\\arduino\\display\\u8g2\\lib\\u8g2
+	url = https://github.com/olikraus/u8g2.git
+[submodule ".\\extensions\\arduino\\other\\mfrc522\\lib\\rfid"]
+	path = .\\extensions\\arduino\\other\\mfrc522\\lib\\rfid
+	url = https://github.com/miguelbalboa/rfid
+[submodule ".\\extensions\\arduino\\other\\pca9685\\lib\\PCA9685-Arduino"]
+	path = .\\extensions\\arduino\\other\\pca9685\\lib\\PCA9685-Arduino
+	url = https://github.com/NachtRaveVL/PCA9685-Arduino.git
+[submodule ".\\extensions\\arduino\\other\\sdCard\\lib\\SD"]
+	path = .\\extensions\\arduino\\other\\sdCard\\lib\\SD
+	url = https://github.com/arduino-libraries/SD.git
+[submodule ".\\extensions\\arduino\\sensor\\apds9960\\lib\\Arduino_APDS9960"]
+	path = .\\extensions\\arduino\\sensor\\apds9960\\lib\\Arduino_APDS9960
+	url = https://github.com/arduino-libraries/Arduino_APDS9960.git
+[submodule ".\\extensions\\arduino\\sensor\\dht\\lib\\DHT-sensor-library"]
+	path = .\\extensions\\arduino\\sensor\\dht\\lib\\DHT-sensor-library
+	url = https://github.com/adafruit/DHT-sensor-library.git
+[submodule ".\\extensions\\arduino\\sensor\\ds18b20\\lib\\Arduino-Temperature-Control-Library"]
+	path = .\\extensions\\arduino\\sensor\\ds18b20\\lib\\Arduino-Temperature-Control-Library
+	url = https://github.com/milesburton/Arduino-Temperature-Control-Library.git
+[submodule ".\\extensions\\arduino\\sensor\\ds18b20\\lib\\OneWire"]
+	path = .\\extensions\\arduino\\sensor\\ds18b20\\lib\\OneWire
+	url = https://github.com/PaulStoffregen/OneWire
+[submodule ".\\extensions\\arduino\\sensor\\max6675\\lib\\MAX6675-library"]
+	path = .\\extensions\\arduino\\sensor\\max6675\\lib\\MAX6675-library
+	url = https://github.com/adafruit/MAX6675-library.git
+[submodule ".\\extensions\\arduino\\sensor\\max30102\\lib\\SparkFun_MAX3010x_Sensor_Library"]
+	path = .\\extensions\\arduino\\sensor\\max30102\\lib\\SparkFun_MAX3010x_Sensor_Library
+	url = https://github.com/sparkfun/SparkFun_MAX3010x_Sensor_Library.git
+[submodule ".\\extensions\\arduino\\sensor\\mpu6050\\lib\\Adafruit_BusIO"]
+	path = .\\extensions\\arduino\\sensor\\mpu6050\\lib\\Adafruit_BusIO
+	url = https://github.com/adafruit/Adafruit_BusIO
+[submodule ".\\extensions\\arduino\\sensor\\mpu6050\\lib\\Adafruit_MPU6050"]
+	path = .\\extensions\\arduino\\sensor\\mpu6050\\lib\\Adafruit_MPU6050
+	url = https://github.com/adafruit/Adafruit_MPU6050
+[submodule ".\\extensions\\arduino\\sensor\\mpu6050\\lib\\Adafruit_Sensor"]
+	path = .\\extensions\\arduino\\sensor\\mpu6050\\lib\\Adafruit_Sensor
+	url = https://github.com/adafruit/Adafruit_Sensor
+[submodule ".\\extensions\\arduino\\sensor\\sharpIR\\lib\\SharpIR"]
+	path = .\\extensions\\arduino\\sensor\\sharpIR\\lib\\SharpIR
+	url = https://github.com/guillaume-rico/SharpIR.git
+[submodule ".\\extensions\\arduino\\sensor\\tcs3200\\lib\\FreqCount"]
+	path = .\\extensions\\arduino\\sensor\\tcs3200\\lib\\FreqCount
+	url = https://github.com/PaulStoffregen/FreqCount
+[submodule ".\\extensions\\arduino\\sensor\\tcs3200\\lib\\MD_TCS230"]
+	path = .\\extensions\\arduino\\sensor\\tcs3200\\lib\\MD_TCS230
+	url = https://github.com/MajicDesigns/MD_TCS230
+[submodule ".\\extensions\\arduino\\sensor\\ultrasonic\\lib\\Ultrasonic"]
+	path = .\\extensions\\arduino\\sensor\\ultrasonic\\lib\\Ultrasonic
+	url = https://github.com/ErickSimoes/Ultrasonic.git

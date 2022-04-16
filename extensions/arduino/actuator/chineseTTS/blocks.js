@@ -5,11 +5,7 @@ function addBlocks (Blockly) {
     const colour = '#5A5AAD';
     const secondaryColour = '#484891';
 
-    const digitalPins = Blockly.getMainWorkspace().getFlyout()
-        .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
-        .getField('PIN')
-        .getOptions();
+    const digitalPins = Blockly.Device.getPinOptions('arduino_pin_setDigitalOutput');
 
     const sound = [
         ['1', '0'],
