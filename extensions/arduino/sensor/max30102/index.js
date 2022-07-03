@@ -5,7 +5,7 @@ const max30102 = formatMessage => ({
     }),
     extensionId: 'max30102',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
     iconURL: `asset/max30102.png`,
@@ -21,7 +21,7 @@ const max30102 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    helpLink: 'https://wiki.openblock.cc'
 });
 
 module.exports = max30102;

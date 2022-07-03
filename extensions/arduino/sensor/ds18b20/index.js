@@ -5,7 +5,7 @@ const ds18b20 = formatMessage => ({
     }),
     extensionId: 'ds18b20',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266'],
     author: 'ArthurZheng',
     iconURL: `asset/ds18b20.png`,
@@ -21,7 +21,7 @@ const ds18b20 = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['sensor'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    helpLink: 'https://wiki.openblock.cc'
 });
 
 module.exports = ds18b20;

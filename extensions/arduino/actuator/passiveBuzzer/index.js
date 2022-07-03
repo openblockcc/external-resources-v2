@@ -5,7 +5,7 @@ const passiveBuzzer = formatMessage => ({
     }),
     extensionId: 'passiveBuzzer',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo',
         'arduinoMega2560', 'arduinoEsp8266'],
     author: 'ArthurZheng',
     iconURL: `asset/passiveBuzzer.png`,
@@ -21,7 +21,7 @@ const passiveBuzzer = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['actuator'],
-    helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    helpLink: 'https://wiki.openblock.cc'
 });
 
 module.exports = passiveBuzzer;
