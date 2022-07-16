@@ -20,9 +20,7 @@ module.exports = [
     'microPythonK210Maixduino',
     'makeyMakey',
     // Third party
-    'ironKit_arduinoUno',
-    'QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_esp32',
-    'QDPRobotC02_arduinoEsp32',
-    'QDPRobotC02_microPythonEsp32',
+    'thirdParty_esp32',
+    'thirdParty_arduinoEsp32',
+    'thirdParty_microPythonEsp32'
 ];
