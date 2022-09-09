@@ -9,25 +9,25 @@ function addMsg (Blockly) {
 
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
+            "MORECOMMENTS_BRANCHBLOCK": "comments: %1",
             "MORECOMMENTS_CATEGORY": "More Comments",
-            "MORECOMMENTS_COMMANDBLOCK": "comments: %1",
-            "MORECOMMENTS_BRANCHBLOCK": "comments: %1"
+            "MORECOMMENTS_COMMANDBLOCK": "comments: %1"
         }
     );
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-cn"],
         {
-            "MORECOMMENTS_CATEGORY": "More Comments",
-            "MORECOMMENTS_COMMANDBLOCK": "comments: %1",
-            "MORECOMMENTS_BRANCHBLOCK": "comments: %1"
+            "MORECOMMENTS_BRANCHBLOCK": "注释：%1",
+            "MORECOMMENTS_CATEGORY": "更多注释",
+            "MORECOMMENTS_COMMANDBLOCK": "注释：%1"
         }
     );
 
     Object.assign(Blockly.ScratchMsgs.locales["zh-tw"],
         {
-            "MORECOMMENTS_CATEGORY": "More Comments",
-            "MORECOMMENTS_COMMANDBLOCK": "comments: %1",
-            "MORECOMMENTS_BRANCHBLOCK": "comments: %1"
+            "MORECOMMENTS_BRANCHBLOCK": "註釋：%1",
+            "MORECOMMENTS_CATEGORY": "更多註釋",
+            "MORECOMMENTS_COMMANDBLOCK": "註釋：%1"
         }
     );
 
