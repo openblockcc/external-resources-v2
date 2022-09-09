@@ -1,8 +1,8 @@
-const ironKit = () => ({
-    name: 'Third Party',
-    extensionId: 'arduinoThirdParty',
+const arduinoDeviceDemo = () => ({
+    name: 'Third Party Device Demo',
+    extensionId: 'arduinoDeviceDemo',
     version: '1.0.0',
-    supportDevice: ['thirdParty_arduinoEsp32'],
+    supportDevice: ['deviceDemo_arduinoEsp32'],
     author: 'OpenBlock',
     hide: true,
     blocks: 'blocks.js',
@@ -13,4 +13,4 @@ const ironKit = () => ({
     helpLink: ''
 });
 
-module.exports = ironKit;
+module.exports = arduinoDeviceDemo;

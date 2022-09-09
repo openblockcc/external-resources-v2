@@ -20,7 +20,7 @@ module.exports = [
     'microPythonK210Maixduino',
     'makeyMakey',
     // Third party
-    'thirdParty_esp32',
-    'thirdParty_arduinoEsp32',
-    'thirdParty_microPythonEsp32'
+    'deviceDemo_esp32',
+    'deviceDemo_arduinoEsp32',
+    'deviceDemo_microPythonEsp32'
 ];
