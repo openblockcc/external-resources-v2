@@ -55,7 +55,8 @@
         "ultrasonic.name": "Ultrasonic",
         "ultrasonic.description": "Standard ultrasonic distance measurement module.",
         "servo.name": "Servo",
-        "servo.description": "Classic servo support for microbit."
+        "servo.description": "Classic servo support for microbit.",
+        "arduinoOttoRobot.description": "An open source modular robot with an epic personality."
     },
     "zh-cn": {
         "chineseTTS.name": "中文 TTS",
@@ -113,7 +114,8 @@
         "ultrasonic.name": "超声波",
         "ultrasonic.description": "标准的超声波测距传感器模块。",
         "servo.name": "舵机",
-        "servo.description": "让 Microbit 可以控制普通的舵机。"
+        "servo.description": "让 Microbit 可以控制普通的舵机。",
+        "arduinoOttoRobot.description": "具有史诗个性的开源模块化机器人。"
     },
     "zh-tw": {
         "chineseTTS.name": "中文 TTS",
@@ -171,6 +173,7 @@
         "ultrasonic.name": "超聲波",
         "ultrasonic.description": "標準的超聲波測距傳感器模塊。",
         "servo.name": "舵機",
-        "servo.description": "讓 Microbit 可以控制普通的舵機。"
+        "servo.description": "讓 Microbit 可以控制普通的舵機。",
+        "arduinoOttoRobot.description": "具有史詩個性的開源模組化機器人。"
     }
 }
